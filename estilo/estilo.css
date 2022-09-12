@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+:root {
+	--amarillo:  #fdb14b;
+	scroll-behavior: smooth;
+}
+
+*{	
+	font-family: 'Kanit', sans-serif;
+
+}
+
+strong {
+	color: var(--amarillo);
+}
+
+.portada {
+	z-index: 4;
+	margin-top: 0 !important;
+	background-color: black;
+	width:  100%;
+	height: 100vh;
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+ 	 overflow: hidden;
+}
+
+.video{  
+	position: absolute;
+ 	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100vh;
+ 	overflow: hidden;
+}
+
+video {
+	min-width: 100vw;
+  	min-height: 100vh;
+ }
+
+.background {
+	width: 100%;
+	height: 100vh;
+	z-index: 5;
+	top: 0;
+  	left: 0;
+	background-color: black;
+	opacity: 0.6;
+}
+.centrar {
+	z-index: 90;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.portada h1 {
+	width: 100%;
+	z-index: 10;
+	color: white;
+	font-size: 8em;
+}
+.portada p{
+	color: white;
+	font-size: 20px;
+	width: 100%;
+}
+.portada svg {
+	cursor: pointer;
+	margin-top: 50px;
+	width: 200px;
+	height: 40px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.1s ease all;
+	color: white;
+	border: none;
+} 
+
+
+.portada button:hover {
+	font-size: 25px;
+}
+
+header{
+	width: 100%;
+    color: #314855;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 9999;
+}
+
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.logo, .logo2 {
+    position: absolute;
+    width: 265px;
+    left: 0px;
+    top: 0;
+}
+
+.site-nav{
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align: center;
+	width: 100%;
+    top:100%;
+    position: absolute;   
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav a{
+	color: white;
+	min-width: 10px;
+	height: 15px;
+	margin: 20px 15px 5px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.site-nav a:hover {
+	transition: color 0.3s ease;
+}
+
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle{
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: white;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 0.2s;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+
+@media (max-width: 700px) {
+	.logo {
+		position: relative;
+		width: 360px;
+		top: 80px;
+	}
+	.logo2 {
+		position: relative;
+		width: 325px;
+	}
+
+	.site-nav {
+		right: 0;
+		height: 270px;
+		width: 100%;
+		text-align: left !important;
+		background: white;
+		margin-top: -30px;
+		transition: all ease-in-out 0.2s;
+	}
+	.site-nav ul {
+		margin-top: 3em;
+	}
+	.site-nav li {
+		padding: 1em;
+		width: 100%;
+	}
+	.site-nav a {
+		text-align: left;
+		border-bottom: 1px solid black;
+		color: black;
+		font-weight: bold;
+	}
+	.menu-toggle {
+		background-color: rgba(0, 0, 0, 0.5);
+	top: -1.5em;
+	}
+}
+
+
+
+@media (min-width:700px){
+  .menu-toggle{
+      display: none;
+  } 
+  .site-nav{
+      height: auto;
+      position: absolute;
+      background: transparent;
+      float: right;
+      margin-right: 10px;
+      clip-path: initial;
+  } 
+  .site-nav li{
+      display: inline-block;
+      border: none;
+  }
+
+  .site-nav a{
+      padding: 0;
+      margin-left: 1em;
+  }
+  .site-nav--icon{
+      display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus{
+      background: transparent;
+  }
+
+}
+
+/*----------- seccion guitarras ------------*/
+
+.guitarras {
+	height: 1000px;
+}
+.guitarras h1 {
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-top: 100px;
+	font-size: 2em;
+	text-align: center;
+}
+
+/*----------- carro de la compra   ------------*/
+
+
+.carroCompra {
+	right: 50px !important;
+	width: 50px;
+	height: 50px;
+	position: absolute !important;
+}
+
+.cart{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.cart-products{
+    position: absolute!important;
+    right: 10px;
+    background-color: white;
+    padding: 0 18px;
+    display: none;
+    width: 215px;
+    z-index: 3;
+    border: solid 1px #314855;
+    text-align: center;
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+
+.products{
+	padding-left: 15%;
+	padding-right: 15%;
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.carts{
+	width: 400px;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+    max-width: 200px;
+    padding-bottom: 34px;
+    margin: 15px;
+    align-items: center;
+}
+.carts img{
+	margin-top: 60px;
+	cursor: pointer;
+    width: 100px;
+    transition: 0.2s ease all;
+}
+
+.carts img:hover{
+	width: 110px;
+}
+.carts p{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 1em;
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+}
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+    text-decoration: none;
+    background: black;
+    padding: 9px 23px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.count-product {
+	font-weight: bold;
+}
+
+.carts a:hover{
+    background: black;
+    color: var(--amarillo);
+    transition-duration: .2s;
+}
+
+.cart-products .item img{
+    width: 50px;
+    margin: 5px;
+}
+
+.cart-products .item{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-bottom: solid 1px #314855;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+.cart-products .item span{
+    padding: 0px 5px;
+    right: 0 !important;
+    border-radius: 50%;
+    font-size: 10px;
+    cursor: pointer;
+}
+.price-total {
+	color: black;
+}
+
+.cart-products h3{
+	font-size: 1em;
+    margin-bottom: 0;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+p.close-btn{
+	color: red;
+	text-align: right;
+    cursor: pointer;
+    color: #000;}
+
+/*------------mejor modelo -----------------*/
+
+.laMejor {
+	width: 100%;
+	margin-top: 200px;
+	background-color:  black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	height: 400px;
+	color: white;
+}
+
+.laMejor h2 {
+	font-size: 2em;
+	/*text-shadow: black 0.1em 0.3em 0.3em;*/
+}
+.laMejor p {
+	margin-top: 20px;
+	font-size: 1em;
+	text-align: left;
+	width: 400px;
+	/*text-shadow: black 0.9em 0.9em 0.9em;*/
+}
+
+.botonAtras svg, .botonAdelante svg {
+	height:20px;
+	width: 20px;
+	cursor: pointer;
+}
+
+
+.contenedor {
+	margin-left: 5%;
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.laMejor img {
+	margin-top: 20px;
+	max-height: 300px;
+	max-width: 400px;
+}
+
+
+ /*-------------cursos------------*/
+
+.courses {
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-top: 100px;
+  	text-align: center;
+  	font-size: 20px;
+  	width: 100%;
+}
+.courses h2 {
+	font-size: 1.5em;
+	margin-bottom: 50px;
+}
+.cursos {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.curso{
+	padding: 20px;
+	margin: auto;
+	height: 230px;
+	width: 370px;
+	cursor: pointer;
+	transition: 0.1s ease all;
+}
+
+.curso h3 {
+	text-align: center;
+	font-size: 20px;
+	transition: 0.1s ease all;
+}
+.curso h3:hover {
+	color: black;
+	border-bottom: 1px solid #fdb14b;
+}
+
+.curso img {
+	width: 70%;
+	height: 70%;
+}
+
+/*--------------- equivalente a footer -------------------*/
+
+.more {
+	border: 1px solid black;
+	height: 500px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+.lista {
+	font-size: 0.9em;
+	margin-top: 4em;
+ 	line-height: 50px;
+}
+
+li a {
+	color: white;
+	text-decoration: none;
+	transition: 0.2s ease all;
+}
+
+li a:hover {
+	color: #fdb14b;
+	border-bottom: 1px solid #fdb14b;
+}
+
+.redes {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.redes img{
+	cursor: pointer;
+	width: 30px;
+	margin: 10px;
+	height: 30px;
+	transition: 0.3s ease all;
+}
+
+.redes img:hover {
+	width: 35px;
+	height: 35px;
+}
+
+/*------ pie de pagina --------------*/
+
+footer {
+	background-color: black;
+	color: white;
+ 	left:0px;
+ 	bottom:0px;
+ 	height:45px;
+  	width:100%;
+  	display: inline-flex;
+	justify-content: center;
+}
+
+footer h4 {
+	font-weight: 100 !important;
+	font-size: 15px;
+	margin:  10px;
+}
+
+@media screen and (max-width: 600px) {
+	footer h4 {
+	text-align: center;
+	font-weight: 100 !important;
+	font-size: 7px;
+	margin:  10px;
+	}
+	footer {
+		height: 24px;
+	}
+}
+
+/*---------------- responsive ------------------*/
+
+@media screen and (max-width: 980px) {
+	
+.laMejor{
+	height: 600px;
+}
+	.laMejor img {
+		height: 480px;
+		width: 600px;
+	}
+	.laMejor h2 {
+		margin-top: 90px;
+	}
+	.courses{
+		padding: 0;
+	}
+	.courses h2 {
+		margin-bottom: 0;
+	}
+	.cursos img {
+		height: 80%;
+	}
+}
+
+@media screen and (max-width: 830px){
+	.products{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	.video {
+		width: 100vw;
+		transform: rotate(0deg);
+	}
+	video {
+		width: 100%;
+	}
+	.video,
+	video,
+	.background,
+	.portada {
+		overflow: hidden;
+		min-height: 50px !important;
+		height: 30vh !important;
+	}
+	.portada svg {
+		height: 20px;
+	}
+	.portada h1 {
+		padding-left: 15%;
+		padding-right: 15%;
+		margin-top: 100px;
+		font-size: 28px;
+	}
+	.portada p {
+		width: 100% !important;
+		padding-left: 15%;
+		padding-right: 15%;
+		margin: 0;
+		width: 100px;
+		font-size: 14px;
+	}
+	.portada a {
+		width: 100% !important;
+	}
+	.guitarras {
+		height: 800px;
+	}
+	.guitarras h1 {
+		font-size: 20px;
+		margin-top: 50px;
+	}
+	.products {
+		padding: 0;
+		margin: 0;
+		height: 1000px;
+		padding-top: 30px;
+		margin-top: 10px !important;
+	}
+	.count-product{
+		text-align: center;
+		background-color: bl;
+		font-weight: bold;
+		font-size: 0.7em;
+	}
+	.cart-products .item .item-content{
+    	width: 75px;
+    }
+    .carts a, .title {
+		font-size: 10px;
+    }
+    .carts a {
+    	padding: 5px;
+    }
+    .carroCompra {
+    	width: 30px;
+    	height: 30px;
+    	position: absolute;
+    	right: 3px !important;
+    }
+    .cart {
+    	width: 30px;
+    	height: 30px;
+    }
+    .carts {
+    	justify-content: space-evenly;
+    	box-shadow: none;
+    	border: none;
+    	width: 50px;
+    	height: 200px;
+    	padding:  0;
+    	margin: 1em;
+    }
+    p.title {
+    	padding: 0px;
+    }
+    .carts p {
+    	width: 50px;
+    	font-size: 0.6em;
+    	margin: 0;
+    }
+	.cart-products .item img {
+    width: 40px;
+	}
+    .cart-products {
+    	width: 180px;
+    }
+    p.close-btn {
+    	color: black;
+    }
+    .cart-products h2 {
+    	font-size: 1em;
+    }
+    .carts img {
+    	margin-top: 25px;
+    	height: 100px;
+    	width: 40px;
+    }
+    .laMejor {
+    	height: 80vh;
+    	margin-top: 0;
+    }
+	.laMejor h2 {
+		margin-top: 40px;
+		font-size: 30px;
+		padding-left: 0;
+	}
+	.laMejor p {
+		width: 200px;
+		font-size: .875em;
+		padding-left: 0;
+	}
+	.contenedor {
+		justify-content: space-evenly;
+		width: 330px !important;
+	}
+	.laMejor img {
+		height: 140px !important;
+   		width: 180px !important;
+   		padding: 0;
+   		margin: 0;
+   		transform: rotate(-20deg);
+	}
+	.botonAtras svg, .botonAdelante svg {
+		height: 20px;
+		width: 20px;
+		color: white;
+	}
+	.courses {
+		margin-top: 0px;
+		padding: 10%;
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.courses h2 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.cursos {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.curso {
+		padding: 10px;
+		width: 120px;
+		height: 80px;
+	}
+	.curso h3 {
+		font-size: 0.5em;
+	}
+	.more {
+		height: 60vh;
+		background-color: black;
+	}
+	.redes {
+		margin-top: 10px;
+		width: 100%
+	}
+	.lista{
+		font-size: .875em;
+	}
+	button {
+		visibility: hidden;
+	}
+    li a {
+    	font-size: 13px;
+    }
+}
+
+

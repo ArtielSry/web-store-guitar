@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="icon" href="estilo/img/icono.ico">
+	<title>Guitar Sounds</title>
+</head>
+<body>
+		<header>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="#guitars"><i class="fa fa-home site-nav--icon"></i>GUITARS</a></li>
+                <li><a href="#about"><i class="fa fa-info site-nav--icon"></i>ABOUT US</a></li>
+                <li><a href="#courses"><i class="fa fa-pencil-alt site-nav--icon"></i>COURSES</a></li>
+            </ul>
+            <div class="container">
+            <img class="logo" src=""> 
+        </div>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+	</header>
+
+	<div class="portada">
+
+         <div class="video">
+            <video src="estilo/img/fondo.mp4" autoplay loop muted></video>
+         </div>
+         <div class="background"></div>
+			<div class="centrar">
+                <h1>GUITAR <strong>SOUNDS</strong></h1>
+			     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			     tempor.</p>
+			     <a href="#guitars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg></a>
+            </div>
+		</div>
+
+	<section class="guitarras"  id="guitars">
+		<h1>Available Guitars</h1>
+	<div class="header-section container"> <!----- carro de la compra ------>
+		<div class="carroCompra">
+            <img onmouseover="showCart(this)" class="cart" src="estilo/img/carro.png" alt="">
+            <p class="count-product"></p>
+        </div>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Cart</h3>
+            <div class="card-items">
+                 
+            </div>
+                <h2>Total: <strong class="price-total">0</strong> €</h2>
+            </div>
+        </div>
+	<section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="estilo/img/guitarra8.4.png" alt="">
+                    <p><span>200</span>€</p>
+                </div>
+                <p class="title">Model 1</p>
+                <a href="" data-id="1" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/guitarra8.2.png" alt="">
+                    <p><span>550</span>€</p>
+                </div>
+                <p class="title">Model 2</p>
+                <a href="" data-id="2" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/guitarra8.1.png" alt="">
+                    <p><span>100</span>€</p>
+                </div>
+                <p class="title">Model 3</p>
+                <a href="" data-id="3" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/guitarra5.png" alt="">
+                    <p><span>190</span>€</p>
+                </div>
+                <p class="title">Model 4</p>
+                <a href="" data-id="4" class="btn-add-cart">Buy now</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="estilo/img/guitarra3.png" alt="">
+                    <p><span>775</span>€</p>
+                </div>
+                <p class="title">Model 5</p>
+                <a href="" class="btn-add-cart" data-id="5">Buy now</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="estilo/img/guitarra7.png" alt="">
+                    <p><span>500</span>€</p>
+                </div>
+                <p class="title">Model 6</p>
+                <a href="" data-id="6" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/pua1.png" alt="">
+                    <p><span>6</span>€</p>
+                </div>
+                <p class="title">Model 1.1</p>
+                <a href="" data-id="7" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/pua2.png" alt="">
+                    <p><span>7</span>€</p>
+                </div>
+                <p class="title">Model 1.2</p>
+                <a href="" data-id="8" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/pua3.png" alt="">
+                    <p><span>19</span>€</p>
+                </div>
+                <p class="title">Model 1.3</p>
+                <a href="" data-id="9" class="btn-add-cart">Buy now</a>
+            </div> 
+            <div class="carts">
+                <div>
+                    <img src="estilo/img/ampli5.png" alt="">
+                    <p><span>180</span>€</p>
+                </div>
+                <p class="title">Model 1.10</p>
+                <a href="" data-id="16" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/ampli4.png" alt="">
+                    <p><span>660</span>€</p>
+                </div>
+                <p class="title">Model 1.9</p>
+                <a href="" data-id="15" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/ampli1.png" alt="">
+                    <p><span>200</span>€</p>
+                </div>
+                <p class="title">Model 1.6</p>
+                <a href="" data-id="12" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/ampli2.png" alt="">
+                    <p><span>190</span>€</p>
+                </div>
+                <p class="title">Model 1.7</p>
+                <a href="" data-id="13" class="btn-add-cart">Buy now</a>
+            </div>
+             <div class="carts">
+                <div>
+                    <img src="estilo/img/ampli3.png" alt="">
+                    <p><span>150</span>€</p>
+                </div>
+                <p class="title">Model 1.8</p>
+                <a href="" data-id="14" class="btn-add-cart">Buy now</a>
+            </div>
+            
+        </div>
+	</section>
+	<section class="laMejor"> <!-- mejor modelo de la tienda, carrousel js ---->
+		<div>
+			<h2><strong>Top</strong> product</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore.</p>
+		</div>
+		<div class="contenedor"> <!--carrousel--->
+	      	<div class="botonAtras" onclick="carrousel('atras')">
+	        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+	      	</div>
+	      	<img src="img/mejor.png" alt="" id="imagen">
+	      	<div class="botonAdelante" onclick="carrousel('adelante')">
+	       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+	      	</div>
+	    </div>
+	</section>
+
+	<section class="courses" id="courses"> <!-- cursos con enlaces a youtube  --->
+		<h2>Courses</h2>
+		<div class="cursos">
+			<div class="curso"><a href="https://www.youtube.com/watch?v=PqN-rlV6Tp4"><img src="estilo/img/curso1.jpg"></a><h3>Beginner.</h3></div>
+			<div class="curso"><a href="https://www.youtube.com/watch?v=PqN-rlV6Tp4"><img src="estilo/img/curso2.jpg"></a><h3>Master.</h3></div>
+			<div class="curso"><a href="https://www.youtube.com/watch?v=PqN-rlV6Tp4"><img src="estilo/img/curso3.jpg"></a><h3>My first time.</h3></div>
+		</div>
+	</section>
+	<section class="more"> <!-- zona equivalente a otro footer -->
+		<ul class="lista" id="about"> 
+			<li><a href="#">Terms & Conditions / Imprint</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Cookie Settings</a></li>
+			<li><a href="#">Online Ordering Process</a></li>
+			<li><a href="#">About Us</a></li>
+		</ul>
+		<div class="redes">
+			<img src="estilo/img/facebook.png">
+			<img src="estilo/img/mensaje.png">
+			<img src="estilo/img/instagram.png">
+		</div>
+	</section>
+	<footer> <!-- Pie de página -->
+			<h4>Guitar sounds 2022 - Política de privacidad y cookies - Developed by ArtielSoraya</h4>
+	</footer>
+	<script>
+		 function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+	</script>
+	<script src="js/custom.js">
+	</script>
+	<script  src="js/carrousel.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
