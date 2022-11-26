@@ -425,7 +425,7 @@ p.close-btn{
 .laMejor {
 	width: 100%;
 	margin-top: 200px;
-	background-color:  black;
+	background-color: #2a2a2a;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -519,7 +519,7 @@ p.close-btn{
 	border: 1px solid black;
 	height: 500px;
 	text-align: center;
-	background-color: black;
+	background-color: #2a2a2a;
 	color: white;
 }
 
