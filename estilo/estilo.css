@@ -318,6 +318,7 @@ header::after{
     padding-bottom: 34px;
     margin: 15px;
     align-items: center;
+    border: 1px solid #d9d9d9;
 }
 .carts img{
 	margin-top: 60px;
@@ -696,8 +697,8 @@ footer h4 {
     	height: 30px;
     }
     .carts {
+	border: 1px solid #e0e0e0;
     	justify-content: space-evenly;
-	border: 1px solid #cccccc;
     	width: 90px;
     	height: 200px;
     	padding:  0;
