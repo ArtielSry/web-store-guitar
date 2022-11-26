@@ -734,12 +734,14 @@ footer h4 {
     	margin-top: 0;
     }
 	.laMejor h2 {
+		text-align: center;
 		margin-top: 40px;
 		font-size: 30px;
 		padding-left: 0;
 	}
 	.laMejor p {
-		width: 200px;
+		text-align: center;
+		width: 240px;
 		font-size: .875em;
 		padding-left: 0;
 	}
