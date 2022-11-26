@@ -198,7 +198,7 @@ header::after{
 		height: 270px;
 		width: 100%;
 		text-align: left !important;
-		background: white;
+		background: black;
 		margin-top: -30px;
 		transition: all ease-in-out 0.2s;
 	}
@@ -211,8 +211,8 @@ header::after{
 	}
 	.site-nav a {
 		text-align: left;
-		border-bottom: 1px solid black;
-		color: black;
+		border-bottom: 1px solid white;
+		color: white;
 		font-weight: bold;
 	}
 	.menu-toggle {
