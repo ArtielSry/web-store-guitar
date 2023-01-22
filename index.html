@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="icon" href="estilo/img/icono.ico">
+	<title>Guitar Sounds</title>
+</head>
+<body>
+	<header> <!-- NAVBAR -->
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="#guitars"><i class="fa fa-home site-nav--icon"></i>GUITARS</a></li>
+                <li><a href="#about"><i class="fa fa-info site-nav--icon"></i>ABOUT US</a></li>
+                <li><a href="#courses"><i class="fa fa-pencil-alt site-nav--icon"></i>COURSES</a></li>
+            </ul>
+            <div class="container">
+            <img class="logo" src=""> 
+        </div>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+	</header>
+	<div class="portada"> <!-- PORTADA -->
+		<div class="centrar">
+            <h1>GUITAR SOUND</h1>
+            <h2>Come and discover your new passion</h2>
+		     <p>The biggest online guitar shop</p>
+             <div class="button"><a href="guitars">See more</a></div>
+        </div>
+        <div class="container__index-img">
+            <img src="estilo/img/portada.jpg">
+        </div>
+	</div>
+    <div class="container__brand">
+        <div class="brand"><img src="estilo/brands/brand1.png"></div>
+        <div class="brand"><img src="estilo/brands/brand2.png"></div>
+        <div class="brand"><img src="estilo/brands/brand3.png"></div>
+        <div class="brand"><img src="estilo/brands/brand4.png"></div>
+        <div class="brand"><img src="estilo/brands/brand5.png"></div>
+    </div>
+
+	<section class="guitarras"  id="guitars">  <!-- CAROUSEL -->
+	
+	<div class="header-section container"> <!----- carro de la compra ------>
+		<div class="carroCompra">
+            <img onclick="showCart(this)" class="cart" src="estilo/img/carro.png" alt="">
+            <p class="count-product">0</p>
+        </div>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">x</p>
+            <h3>CART</h3>
+            <div class="card-items">
+                 
+            </div>
+                <h2>Total: <strong class="price-total">0</strong> €</h2>
+            </div>
+        </div> 
+	<section class="container">
+        <h1>Our products</h1> <!-- PRODUCTOS DE LA tienda-->
+        <div class="products">
+            <div class="carts">
+                <div class="container_up">
+                    <img src="estilo/img/guitarra8.4.png" alt="">
+                </div>
+                <p class="title">Ibanez</p>
+                <p><span>200</span>€</p>
+                <a href="" data-id="1" class="btn-add-cart">ADD CART</a>
+            </div>
+             <div class="carts">
+                <div class="container_up">
+                    <img src="estilo/img/guitarra8.2.png" alt="">
+                </div>
+                <p class="title">YAMAHA</p><p><span>550</span>€</p>
+                <a href="" data-id="2" class="btn-add-cart">ADD CART</a>
+            </div>
+             <div class="carts">
+                <div class="container_up">
+                    <img src="estilo/img/guitarra5.png" alt="">
+                   
+                </div>
+                <p class="title">Fender</p> <p><span>190</span>€</p>
+                <a href="" data-id="3" class="btn-add-cart">ADD CART</a>
+            </div>
+            <div class="carts">
+                <div class="container_up">
+                    <img src="estilo/img/guitarra3.png" alt="">
+                    
+                </div>
+                <p class="title">Fender</p><p><span>775</span>€</p>
+                <a href="" class="btn-add-cart" data-id="4">ADD CART</a>
+            </div>
+            <div class="carts">
+                <div class="container_up">
+                    <img src="estilo/img/guitarra7.png" alt="">
+                   
+                </div>
+                <p class="title">YAMAHA</p> <p><span>500</span>€</p>
+                <a href="" data-id="5" class="btn-add-cart">ADD CART</a>
+            </div>
+	</section>
+        <div class="container__video">
+            <video src="estilo/img/video.mp4" autoplay loop muted></video>
+        </div>
+	<section class="laMejor"> <!-- mejor modelo de la tienda, carrousel js ---->
+		<div class="container__top">
+			<h2>Bestseller</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="contenedor"> <!--carrousel--->
+	      	<div class="botonAtras" onclick="carrousel('atras')">
+	           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+	      	</div>
+	      	<div class="container__top-img"><img src="img/mejor.png" alt="" id="imagen"></div>
+	      	<div class="botonAdelante" onclick="carrousel('adelante')">
+	           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+              <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+	    </div>
+	</section>
+
+	<section class="courses" id="courses"> <!-- cursos con enlaces a youtube  --->
+		<div class="container__arrow-title">
+            <h2>What people say about us</h2>
+            <div class="container__arrow">
+                <p><</p>
+                <p>></p>
+            </div>
+        </div>
+        <div class="container__opinion-people">
+    		<div class="container__opinion">
+                <h3>Excellent!!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="full__opinion">
+                <div class="container__people">
+                    <img src="https://randomuser.me/api/portraits/men/34.jpg">
+                    <h5>Jhon Mckenzy</h5>
+                     </div>
+                    <div class="container__opinion-start">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg">
+                    </div>
+                </div>
+    		</div>
+            <div class="container__opinion">
+                <h3>Amazing experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="full__opinion">
+                <div class="container__people">
+                    <img src="https://randomuser.me/api/portraits/women/67.jpg">
+                    <h5>Jessica Blue</h5>
+                </div>
+                <div class="container__opinion-start">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg">
+                </div>
+               </div>
+            </div>
+        </div>
+	</section>
+	<section class="container__footer"> <!-- zona equivalente a otro footer -->
+		<ul class="footer__ul" id="about"> 
+			<li><a href="#">Terms & Conditions / Imprint</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Cookie Settings</a></li>
+			<li><a href="#">Online Ordering Process</a></li>
+			<li><a href="#">About Us</a></li>
+		</ul>
+		<div class="redes">
+			<img src="estilo/img/facebook.png">
+			<img src="estilo/img/mensaje.png">
+			<img src="estilo/img/instagram.png">
+		</div>
+	</section>
+	<footer> <!-- Pie de página -->
+			<h4>Guitar sounds 2022 - Política de privacidad y cookies - Developed by ArtielSoraya</h4>
+	</footer>
+	<script>
+		 function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+	</script>
+	<script src="js/custom.js">
+	</script>
+	<script  src="js/carrousel.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
